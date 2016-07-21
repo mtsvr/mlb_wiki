@@ -16,7 +16,6 @@
     <script src="js/app.min.js"></script>
   </head>
   <body ng-app="MlbWiki" ng-controller="MainController">
-
     <!-- Sidebars -->
     <div ng-include="'sidebar.html'" 
             ui-track-as-search-param='true'
@@ -37,7 +36,7 @@
         </div>
         <div class="btn-group pull-right">
           <div class="btn">
-            <a  href="#/data"><i class="fa fa-database"></i> Data</a>
+            <a ng-href="{{ hreflink }}"><i class="fa fa-database"></i> Data</a>
           </div>
         </div>
       </div>
